@@ -386,9 +386,7 @@ button img:hover {
 }
 
 @media (max-width: 960px) {
-    html{
-        width: 100%;
-    }
+   
     h1 {
         margin-left: 6%;
         padding-bottom: 13%;
@@ -522,4 +520,5 @@ button img:hover {
 
 
 }
+
 
