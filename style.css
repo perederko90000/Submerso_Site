@@ -1,0 +1,519 @@
+/* fonts importadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* base para cores */
+:root {
+    --cor-primary: WHITE;
+    --cor-secundary: #03345B;
+    --cor-terciario: #4DBAFB;
+    --cor-quar: #A3BACD;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+h1 {
+    color: var(--cor-primary);
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 9%;
+    margin-bottom: 0;
+    margin-left: 2%;
+
+    padding: 5%;
+
+
+
+
+}
+
+h2 {
+    color: var(--cor-primary);
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: normal;
+
+    margin-bottom: 0;
+
+    padding: 5%;
+
+
+
+
+}
+
+p {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 2%;
+
+
+
+
+
+}
+
+.alinhamento_topicos {
+    color: var(--cor-primary);
+    font-family: "Poppins", sans-serif;
+    font-weight: medium;
+    font-style: normal;
+    font-size: 1.3rem;
+
+
+
+}
+
+/* submerso apresentaçao codigo */
+
+.logo_cor {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#0A2D4E, #0A3B6B);
+
+}
+
+.submerso_apresentação {
+    background: linear-gradient(#066EC1, #235c91);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav_imagens:hover {
+
+    background-color: #000;
+    border-radius: 17rem;
+}
+
+.tamanho_medalha {
+    width: 11%;
+    margin-left: 3%;
+}
+
+.botao_whats {
+    width: 45%;
+    margin-left: 6%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+    justify-content: center;
+    border-radius: 2rem;
+    color: #000;
+
+    background-color: #4DBAFB;
+}
+
+.botao_whats:hover {
+    border-color: #c78c19;
+    background-color: #ffffff;
+
+
+    transform: scale(1.1);
+    transition: 1s all;
+
+}
+
+.imagem_whats {
+    width: 20%;
+}
+
+.btn-whatsapp {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.caminhao_imagem {
+    width: 60%;
+}
+
+.img_caminhao {
+    width: 100%;
+}
+
+/* sobre codigo */
+
+.submerso_apresentação_sobre {
+
+    background-image: url(assets/frota_caminhoes_submerso_fullhd_premium.png);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.texto_sobre {
+    width: 40%;
+    color: aliceblue;
+    margin-left: 5%;
+    line-height: 2rem
+}
+
+.sobre_classifi {
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+}
+
+.modulos_sobre {
+    display: flex;
+    background-color: #4DBAFB;
+    align-items: center;
+    margin-right: 10%;
+    border-radius: 2rem;
+}
+
+.modulos_sobre:hover {
+    border-color: #c78c19;
+    background-color: #ffffff;
+
+
+    transform: scale(1.1);
+    transition: 1s all;
+
+}
+
+/*entregas realizadas codigo*/
+
+.submerso_apresentação_entregas {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#066EC1, #03345B);
+}
+
+button img {
+    display: block;
+    /* elimina espaços indesejados */
+    background-color: #4db8ff;
+    /* cobre a transparência do PNG */
+    border-radius: 90%;
+}
+
+button img:hover {
+
+
+
+    transform: scale(1.1);
+    transition: 1s all;
+
+
+}
+
+
+.carousel {
+    position: relative;
+    width: 50%;
+    /* largura do carrossel */
+    height: 100%;
+    /* altura fixa */
+    overflow: hidden;
+    /* só mostra 1 imagem de cada vez */
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    /* cada slide ocupa 100% do espaço */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Botões */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* transparente */
+
+
+
+    /* seta menor */
+    padding: 0;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.prev {
+    left: 2rem;
+
+}
+
+.next {
+    right: 2rem;
+}
+
+.prev:hover,
+.next:hover {
+    transform: scale(1s, 1.1);
+}
+
+
+
+
+
+
+
+
+
+/* certificados codigo*/
+.submerso_apresentação_certificacoes {
+    padding-bottom: 10%;
+
+
+    background: url(assets/fundo_.png)
+}
+
+.certificado-conteudo {
+    display: flex;
+    background-color: #6DC7FF;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 5));
+    opacity: 70%;
+    border-radius: 2rem;
+
+}
+
+.botao_ligue {
+    width: 45%;
+    margin-left: 3%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+    justify-content: center;
+    border-radius: 2rem;
+
+
+    background-color: #02ffff;
+}
+
+.botao_ligue:hover {
+    border-color: #c78c19;
+    background-color: #ffffff;
+
+    transform: scale(1.1);
+    transition: 1s all;
+
+}
+
+/* contato codigo*/
+.contato {
+    background: linear-gradient(#03345B, #4DBAFB);
+    display: flex;
+
+
+
+}
+
+.div_form {
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-contato {
+    display: flex;
+    height: 23rem;
+    width: 30%;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    background-color: #A3BACD;
+    padding: 0.5rem;
+    margin: 2rem;
+    margin-top: 16%;
+
+    border-radius: 2rem;
+    font-family:
+        Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.espacamento_entre_contato {
+    margin-left: 5%;
+}
+
+.botao_clicado {
+    background-color: #0180cf;
+    color: aliceblue;
+    border: none;
+}
+
+.botao_clicado:hover {
+    border: none;
+
+    background-color: #066EC1;
+
+    transform: scale(1.1);
+    transition: 1s all;
+
+
+    /* Aplica a animação 'pulsar' infinitamente */
+}
+
+@media (max-width: 720px) {
+    h1 {
+        margin-left: 13%;
+        padding-bottom: 13%;
+    }
+
+    p {
+        margin-left: 12%;
+    }
+
+
+
+    .logo_cor {
+        display: flex;
+        width: 100%;
+    }
+
+
+    .nav_imagens {
+        display: none;
+    }
+
+    .submerso_apresentação {
+        flex-direction: column;
+    }
+
+    .tamanho_medalha {
+        display: none;
+    }
+
+    .alinhamento_topicos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 25%;
+        padding-bottom: 15%;
+    }
+
+    .botao_whats {
+        width: 100%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+    }
+
+    .img_caminhao {
+        margin-left: 37%;
+    }
+
+
+
+
+
+
+
+
+    .sobre_classifi {
+        margin-left: 1%;
+    }
+
+    .texto_sobre {
+        width: 63%;
+        margin-left: 19%;
+        padding-bottom: 17%
+    }
+
+
+
+    .modulos_sobre {
+        width: 30%;
+        margin-right: 2%;
+        flex-direction: column;
+        padding: 2%;
+    }
+
+
+    .contato {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .info-contato {
+        width: 87%;
+    }
+
+    footer {
+        padding: 3%;
+
+
+    }
+
+    .div_form {
+        width: 94%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .submerso_apresentação_entregas {
+        display: none;
+    }
+
+    .submerso_apresentação_certificacoes {
+        display: none;
+    }
+
+}
