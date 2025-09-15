@@ -385,7 +385,7 @@ button img:hover {
     /* Aplica a animação 'pulsar' infinitamente */
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
     html{
         width: 100%;
     }
@@ -522,3 +522,4 @@ button img:hover {
 
 
 }
+
