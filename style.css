@@ -386,9 +386,13 @@ button img:hover {
 }
 
 @media (max-width: 720px) {
+    html{
+        width: 100%;
+    }
     h1 {
-        margin-left: 13%;
+        margin-left: 6%;
         padding-bottom: 13%;
+        
     }
 
     p {
@@ -515,5 +519,6 @@ button img:hover {
     .submerso_apresentação_certificacoes {
         display: none;
     }
+
 
 }
