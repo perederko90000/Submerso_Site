@@ -162,12 +162,15 @@ p {
     width: 40%;
     color: aliceblue;
     margin-left: 5%;
-    line-height: 2rem
+    line-height: 2rem;
+    padding: 1%;
+    background: #0a2d4ebd;
+    border-radius: 1rem;
 }
 
 .sobre_classifi {
     display: flex;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: 10%;
     margin-bottom: 4%;
 }
@@ -518,6 +521,7 @@ button img:hover {
 
 
 }
+
 
 
 
